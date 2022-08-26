@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet');
+*{
+    font-family: 'Roboto', sans-serif;
 
+}
 body{
     padding-left: 10%;
     padding-right:10%;
-}
+    background-image: url(https://www.armony.cl/wp-content/uploads/2020/09/flores_primavera_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}   
 .encabezado{
     
     background-color:	#a3ee5b;
@@ -11,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 190px;
+    border-radius: 42px;
 }
 .logo{
     
@@ -23,6 +30,7 @@ body{
     align-items: center;
     background-color:	#a3ee5b;
     height: 500px;
+    border-radius: 42px;
 }
 
 .contacto{
@@ -30,6 +38,7 @@ body{
     background-color: 	#a3ee5b;
     display: flex;
     align-items: center;
+    border-radius: 42px;
     
     
 }
@@ -81,14 +90,7 @@ body{
     border: #188300 10px solid;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: var(--primary-color-dark);
-    color: var(--accent-color);
-    padding: 20px;
-  }
+
   
 .articulo{
     display: flex;
@@ -109,12 +111,8 @@ footer {
     align-items: center;
 }
 
-footer{
-    height: 60vh;
-    background-color: #66d855;
-}
 
-footer #section-clima{
+#section-clima{
     height: 270px;
     margin-bottom: 0;
     background-color: #66d855;
@@ -139,29 +137,31 @@ footer #section-clima{
 .detalle-clima{
     text-align: start;
 }
-footer #section-clima .contenido-clima #ciudad{
+#section-clima .contenido-clima #ciudad{
     font-size: 20px;
     font-weight: 400;
 }
-footer #section-clima .contenido-clima #temperatura{
+#section-clima .contenido-clima #temperatura{
     float: left;
     font-size: 30px;
     padding-top: 20px;
 }
-footer #section-clima .contenido-clima #fecha{
+#section-clima .contenido-clima #fecha{
     color: #66d855;
     font-weight: bold;
 }
-footer #section-clima .contenido-clima #clima, #descripcion{
+#section-clima .contenido-clima #clima, #descripcion{
     font-weight: 500;
 }
 .noticias{
     margin-top: 2%;
     background-color: #a3ee5b;
+    border-radius: 42px;
 }
 /* CSS PARTE DEL REGISTRO */
 
 .grandeRegister{
+    border-radius: 42px;
     margin-top: 2%;
     background-color: #a3ee5b;
     background-image: url(https://www.caracteristicas.co/wp-content/uploads/2019/02/plantas-2-e1586222347636.jpg);
@@ -253,3 +253,101 @@ footer #section-clima .contenido-clima #clima, #descripcion{
     }
 
 /* Fin PARTE DEL REGISTRO */
+
+/* PARTE CLIMA */
+.clima{
+    margin-top: 2%;
+    background-color: #a3ee5b;
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2%;
+    border-radius: 42px;
+}
+
+.climafondo{
+    background-color: #66d855;
+    
+}
+
+#section-clima{
+    height: 270px;
+    margin-bottom: 0;
+    background-color: #66d855;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.contenido-clima{
+    margin: auto; 
+    width: 300px;
+    border-radius: 10px;
+    font-size: small;
+    /* box-shadow: 0 0 20px 8px #cfb5ac85; */
+    /* border-style: dashed;
+    border-color: #cfb5ac85; */
+    padding: 1px 1px 1px 10px;
+}
+.titulo-clima{
+    text-align: start;
+}
+.detalle-clima{
+    text-align: start;
+}
+#section-clima .contenido-clima #ciudad{
+    font-size: 20px;
+    font-weight: 400;
+}
+#section-clima .contenido-clima #temperatura{
+    float: left;
+    font-size: 30px;
+    padding-top: 20px;
+}
+#section-clima .contenido-clima #fecha{
+    color: #66d855;
+    font-weight: bold;
+}
+#section-clima .contenido-clima #clima, #descripcion{
+    font-weight: 500;
+}
+
+/* FIN PARTE CLIMA */
+
+/* FOOTER */
+.footer {
+   
+    background-image: url(https://cdn.pixabay.com/photo/2019/10/18/10/36/illustration-4558800_1280.png);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-repeat: round;
+    background-size: contain;
+    height: 345px;
+    
+  }
+  .textfotter{
+    background-color: #13441a15;
+    display: flex;
+    position: fixed;
+    left: 46%;
+    bottom: 0;
+    color: #110f0f;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+   
+
+  }
+  .tepFoter{
+      color: #000000;
+  }
+
+/* FIN FOOTER */
