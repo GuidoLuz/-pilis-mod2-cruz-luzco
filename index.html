@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    
     <title>Feria de las Plantas JUJUY</title>
 </head>
 <body>
@@ -88,39 +89,22 @@
              </div>
          </section>
  
-         <section id="registro" class="noticias">
-             <article class="articulo">
-                 <div>
-                     <h3 class="subtitulo"> 
-                         SUBTITULO
-                     </h3>
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore consequatur aliquid sint odio? Eaque praesentium hic laborum laboriosam earum sequi sunt cumque facilis omnis, exercitationem perferendis, obcaecati harum nam.
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minus dolore repudiandae! Obcaecati ex, ipsum amet dignissimos eos pariatur voluptatum in ipsam dolor velit architecto alias dicta, doloremque dolorem debitis?
-                     </p>
-                 </div>
-                 <div>
-                     <img class="img2" width="300px" src="./isues/quim.jpg" alt="">
-                 </div>
- 
-             </article>
-             <article class="articulo">
-                 <div>
-                     <h3 class="subtitulo"> 
-                     SUBTITULO
-                     </h3>
-                     <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore consequatur aliquid sint odio? Eaque praesentium hic laborum laboriosam earum sequi sunt cumque facilis omnis, exercitationem perferendis, obcaecati harum nam.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minus dolore repudiandae! Obcaecati ex, ipsum amet dignissimos eos pariatur voluptatum in ipsam dolor velit architecto alias dicta, doloremque dolorem debitis?
-                     </p>
-                 </div>
-                 <div>
-                    <img class="img2" width="300px" src="./isues/quim.jpg" alt="">
-                 </div>
- 
-             </article>
+
+         <!-- PARTE DEL REGISTRO -->
+         <section id="registro" class="grandeRegister">
+            <form class="form-register" id="formulario">
+                <h4>Registrate Al Evento</h4>
+                <input class="controls" type="text" name="nomComercio" id="nomComercio" placeholder="Nombre Del Comercio">
+                <input class="controls" type="text" name="nomTitular" id="nomTitular" placeholder="Nombre del Titular">
+                <input class="controls" type="text" name="dni" id="dni" placeholder="Dni del titular">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Email">
+                <button id="enviar" class="botons" type="submit" value="Registrar"> Registrar</button>
+            </form>
+
          </section>
-    
+        <!-- FIN DEL REGISTRO -->
+
+
         <section id="clima"  class="noticias">
             <p>Clima</p>
             <p>Asi esta el clima en el lugar del evento!</p>
@@ -154,6 +138,8 @@
         <p>Copyright © 2022</p>
         <a> <i class="fa-brands fa-whatsapp"></i>+543884768885</a>
     </footer>
-    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/main.js"></script>
+    
 </body>
 </html>

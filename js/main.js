@@ -5,6 +5,7 @@ document.getElementById('fecha').textContent=result;
 
 
 
+
 let lat="-24.18325";
 let lon="-65.33134";
 let key="ef5d92068b330ed987c647483bae0d6b";
@@ -12,6 +13,7 @@ let lang="sp";
 let api=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&lang=${lang}`;
 
 async function getClima(){
+
     try{
         let response = await fetch(api);
         let ipResponse = await response.json();
@@ -45,3 +47,51 @@ async function getClima(){
     }
 }
 getClima();
+
+/* PARTE DEL REGISTRO */
+function cleanForm() {
+    let formulario = document.getElementById('formulario');    
+    formulario.reset(); 
+
+    console.log("borrado");
+}
+
+let boton = document.getElementById("enviar");
+            boton.addEventListener("click", onClick);
+
+        function onClick (event) { 
+                event.preventDefault();
+                const mensaje = {
+                    nomComercio: document.getElementById('nomComercio').value,
+                    nomTitular: document.getElementById('nomTitular').value,
+                    dni: document.getElementById('dni').value,
+                    correo: document.getElementById('correo').value
+                  }
+                  console.log(mensaje);
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Registrado Correctamente',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+                  fetch("https://jsonplaceholder.typicode.com/posts", {
+                    method: "POST",
+                    body: JSON.stringify(mensaje),
+                    headers: { "Content-type": "application/json; charset=UTF-8" },
+                  })
+                    .then((response) => response.json())
+                    .then((json) => { 
+                        console.log(json);
+                        Swal.fire(
+                            'Registrado',
+                            'Gracias por tu participar del evento', 
+                            'success'
+                        );
+                        cleanForm();
+                       
+                    })
+                    .catch((err) => console.log(err));
+            }
+
+/* FIN DEL REGISTRO */
