@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <title>Feria de las Plantas JUJUY</title>
 </head>
 <body>
+    <!-- SECCION MENU -->
     <header>
         <div class="encabezado">
             <div class="botones">
@@ -26,7 +30,8 @@
 
         </div>
     </header>
-
+            
+    <!-- FIN SECCION MENU -->
     <main>
         <section id="home" class="primeraSeccion"> 
            <div class="texto" >
@@ -104,10 +109,13 @@
          </section>
         <!-- FIN DEL REGISTRO -->
 
-
-        <section id="clima"  class="noticias">
-            <p>Clima</p>
-            <p>Asi esta el clima en el lugar del evento!</p>
+        <!-- SECCION CLIMA -->
+        <section id="clima"  class="clima">
+            
+            <img style="padding:17px;" class="climafondo" src="https://mundojardin.eu/wp-content/uploads/2020/11/Icono-Sol.png" alt="">
+            <div class="climafondo">
+            <h2>Clima</h2>
+            <h4>Asi esta el clima en el lugar del evento!</h4>
             <br>
             <div class="contenido-clima">
                 <div class="titulo-clima">
@@ -129,14 +137,18 @@
                     <label id="viento">12</label>
                 </div>
             </div>
+            </div>
             
-    
         </section>
+        <!-- FIN SECCION CLIMA -->
     </main>
 
-    <footer>
-        <p>Copyright © 2022</p>
-        <a> <i class="fa-brands fa-whatsapp"></i>+543884768885</a>
+    <footer class="footer">
+        <div class="textfotter">
+            <p class="tepFoter">Copyright © 2022</p>
+            <a class="tepFoter" href="https://walink.co/66390b"><i class="fa-brands fa-whatsapp" ></i>+543884768885</a>
+            
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
     <script src="./js/main.js"></script>
