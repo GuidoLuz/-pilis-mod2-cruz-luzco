@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet');
+
+body{
+    padding-left: 10%;
+    padding-right:10%;
+}
+.encabezado{
+    
+    background-color:	#a3ee5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+}
+.logo{
+    
+    padding-left: 120px;
+}
+.primeraSeccion{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:	#a3ee5b;
+    height: 500px;
+}
+.noticias{
+    margin-top: 2%;
+    background-color: 	#a3ee5b;
+    
+}
+.contacto{
+    margin-top: 2%;
+    background-color: 	#a3ee5b;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.boton{
+    background: #d1fbd8;
+    border: 1px solid #66d855;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+
+
+
+}
+
+.boton:hover,
+.button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #242320;
+}
+.boton:active {
+    opacity: .9;
+  }
+
+.texto{
+    padding: 8%;
+    margin: 2%;
+    background-color: 		#66d855;
+}
+.img2{
+    border-radius: 2%;
+    border: #188300 10px solid;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--primary-color-dark);
+    color: var(--accent-color);
+    padding: 20px;
+  }
+  
+.articulo{
+    display: flex;
+    padding: 5%;
+    
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.formulario{
+    background-color: 		#66d855;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 60vh;
+    background-color: #66d855;
+}
+
+footer #section-clima{
+    height: 270px;
+    margin-bottom: 0;
+    background-color: #66d855;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.contenido-clima{
+    margin: auto; 
+    width: 300px;
+    border-radius: 10px;
+    font-size: small;
+    /* box-shadow: 0 0 20px 8px #cfb5ac85; */
+    /* border-style: dashed;
+    border-color: #cfb5ac85; */
+    padding: 1px 1px 1px 10px;
+}
+.titulo-clima{
+    text-align: start;
+}
+.detalle-clima{
+    text-align: start;
+}
+footer #section-clima .contenido-clima #ciudad{
+    font-size: 20px;
+    font-weight: 400;
+}
+footer #section-clima .contenido-clima #temperatura{
+    float: left;
+    font-size: 30px;
+    padding-top: 20px;
+}
+footer #section-clima .contenido-clima #fecha{
+    color: #66d855;
+    font-weight: bold;
+}
+footer #section-clima .contenido-clima #clima, #descripcion{
+    font-weight: 500;
+}
