@@ -1,4 +1,4 @@
-
+/* PARTE de API CLIMA */
 var date = new Date();
 result = date.toLocaleDateString()+" "+date.getHours()+":"+date.getMinutes();
 document.getElementById('fecha').textContent=result;
